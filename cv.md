@@ -5,16 +5,19 @@
 - GitHub: [m0r741n](https://github.com/m0r741n)
 - Discord: Vax#1102
 ## About myself:
-dkaldkl
+I'm 32 y/o *young man*, who wants to try himself in coding. 
 ## Skills:
-asdasdasd
+Neophyte in coding. Hope it'll go well.
 ## Code:
 ```
-dadad
+function multiply(a, b){
+    return a * b;
+}
 ```
 ## Courses:
-adadsad
+JS/Frontend Development stage 0 (*in process*)
 ## Education:
-adadadad
+European Humanities University
 ## Languages:
-adadad
++ Russian - native
++ English - B2 (*hopefully*)    
