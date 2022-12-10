@@ -1,20 +1,90 @@
 @import url(./normalize.css);
 
 :root {
-    --main-bgcolor: rgba(7, 43, 25, 0.603);
+    --main-bgcolor: rgba(7, 43, 25, 0.5);
     --secondary-bgcolor: rgba(7, 43, 25, 0.733);
     --main-color: #ffffff;
     --main-font: Montserrat, sans-serif;
 }
 
-._wrapper {
-    width: 1200px;
-    min-height: 100%;
-    margin: 0 auto;
-}
-
 body {
-    background-color: var(--main-bgcolor);
+    background-color: rgba(7, 43, 25, 0.5);
     color: var(--main-color);
     font-family: var(--main-font);
+}
+
+._wrapper {
+    max-width: 1200px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0px 50px;
+}
+
+header {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-bgcolor);
+}
+
+nav {
+    display: flex;
+    margin: 20px 0;
+    padding: 0px 50px;
+}
+
+nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    list-style-type: none;
+}
+
+nav > ul > li {
+    margin: 0px 30px 0px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+h1 {
+    font-weight: 700;
+    position: relative;
+}
+
+h1::after {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 2px;
+    top: 50px;
+    right: -20px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: var(--main-bgcolor);
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+    padding: 10px 0;
+    margin: 0px 5px;
+    line-height: 2em;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2%;
+}
+
+.main-block:nth-child(n+3) {
+    margin-top: 40px;
 }
