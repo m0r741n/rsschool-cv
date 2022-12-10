@@ -1,1 +1,20 @@
 @import url(./normalize.css);
+
+:root {
+    --main-bgcolor: rgba(7, 43, 25, 0.603);
+    --secondary-bgcolor: rgba(7, 43, 25, 0.733);
+    --main-color: #ffffff;
+    --main-font: Montserrat, sans-serif;
+}
+
+._wrapper {
+    width: 1200px;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--main-bgcolor);
+    color: var(--main-color);
+    font-family: var(--main-font);
+}
