@@ -45,6 +45,10 @@ nav > ul > li {
     margin: 0px 30px 0px 0px;
 }
 
+li > a > span {
+    text-decoration: line-through;
+}
+
 a {
     text-decoration: none;
     color: var(--main-color);
@@ -152,8 +156,10 @@ footer {
     }
 }
 
-@media (min-width: 0px) and (max-width: 510px) {
+@media (min-width: 0px) and (max-width: 501px) {
     h1 {
+        width: 261px;
+        text-align: center;
         margin: 5px 70px;
     }
 
@@ -163,7 +169,7 @@ footer {
         width: 150px;
         height: 2px;
         top: 90px;
-        right: -8px;
+        right: 22%;
         border-radius: 50%;
         background-color: var(--main-color);
     }
