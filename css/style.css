@@ -130,7 +130,7 @@ footer {
     }
 }
 
-@media (max-width: 775px) {
+@media (min-width: 360px) and (max-width: 775px) {
     main {
         display: flex;
         flex-direction: row;
@@ -149,5 +149,43 @@ footer {
 
     .main-block:nth-child(n+1) {
         margin-top: 40px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 510px) {
+    h1 {
+        margin: 5px 70px;
+    }
+
+    h1::after {
+        position: absolute;
+        content: "";
+        width: 150px;
+        height: 2px;
+        top: 90px;
+        right: -8px;
+        border-radius: 50%;
+        background-color: var(--main-color);
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 0px;
+        background-color: var(--main-bgcolor);
+    }
+
+    .main-block {
+        display: flex;
+        flex-basis: 100%;
+        padding-bottom: 30px;
+        margin: 0px;
+        line-height: 2em;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        justify-content: space-between;
+        padding: 0px 15px;
     }
 }
