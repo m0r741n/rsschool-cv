@@ -129,3 +129,25 @@ footer {
         background-color: var(--main-color);
     }
 }
+
+@media (max-width: 775px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+        background-color: var(--main-bgcolor);
+    }
+
+    .main-block {
+        display: flex;
+        flex-basis: 100%;
+        padding-bottom: 30px;
+        margin: 0px 5px;
+        line-height: 2em;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .main-block:nth-child(n+1) {
+        margin-top: 40px;
+    }
+}
