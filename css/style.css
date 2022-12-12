@@ -82,6 +82,10 @@ h1 {
     position: relative;
 }
 
+h2 {
+    font-weight: 400;
+}
+
 h1::after {
     position: absolute;
     content: "";
