@@ -1,0 +1,237 @@
+@import url(./normalize.css);
+
+:root {
+    --main-bgcolor: rgba(7, 43, 25, 0.5);
+    --secondary-bgcolor: rgba(7, 43, 25, 0.733);
+    --main-color: #ffffff;
+    --main-font: Montserrat, sans-serif;
+}
+
+body {
+    background-color: rgba(7, 43, 25, 0.5);
+    color: var(--main-color);
+    font-family: var(--main-font);
+}
+
+._wrapper {
+    max-width: 1200px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 0px 50px;
+}
+
+header {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-bgcolor);
+}
+
+nav {
+    display: flex;
+    margin: 20px 0;
+    padding: 0px 50px;
+}
+
+nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    list-style-type: none;
+}
+
+nav > ul > li {
+    position: relative;
+    margin: 0px 30px 0px 0px;
+}
+
+nav > ul > li > a:hover::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 12px;
+    top: 2px;
+    left: -10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+nav > ul > li > a:hover::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 12px;
+    top: 2px;
+    margin-left: 9px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* li > a > span {
+    text-decoration: line-through;
+} */
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+h1 {
+    font-weight: 700;
+    position: relative;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h1::after {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 2px;
+    top: 50px;
+    right: -20px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: var(--main-bgcolor);
+}
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    width: calc(50% - 10px);
+    padding-bottom: 30px;
+    margin: 0px 5px;
+    line-height: 2em;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-block:nth-child(n+3) {
+    margin-top: 40px;
+}
+
+.main-block-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0px 70px;
+}
+
+span[data-title]:hover::after{
+    content: attr(data-title);
+    position: absolute;
+    right: 38px;
+    background-color: rgb(49, 49, 49);
+    text-decoration: line-through;
+}
+
+pre {
+    white-space: pre-line;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: var(--secondary-bgcolor);
+}
+
+@media (max-width: 990px) {
+    nav > ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 0px;
+        list-style-type: none;
+    }
+
+    nav > ul > li {
+        margin: 0px 0px 20px 0px;
+    }
+
+    h1::after {
+        position: absolute;
+        content: "";
+        width: 200px;
+        height: 2px;
+        top: 50px;
+        right: 25px;
+        border-radius: 50%;
+        background-color: var(--main-color);
+    }
+}
+
+@media (min-width: 360px) and (max-width: 775px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+        background-color: var(--main-bgcolor);
+    }
+
+    .main-block {
+        display: flex;
+        flex-basis: 100%;
+        padding-bottom: 30px;
+        margin: 0px 5px;
+        line-height: 2em;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .main-block:nth-child(n+1) {
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 501px) {
+    h1 {
+        width: 261px;
+        text-align: center;
+        margin: 5px 70px;
+    }
+
+    h1::after {
+        position: absolute;
+        content: "";
+        width: 150px;
+        height: 2px;
+        top: 90px;
+        right: 22%;
+        border-radius: 50%;
+        background-color: var(--main-color);
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 0px;
+        background-color: var(--main-bgcolor);
+    }
+
+    .main-block {
+        display: flex;
+        flex-basis: 100%;
+        padding-bottom: 30px;
+        margin: 0px;
+        line-height: 2em;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        justify-content: space-between;
+        padding: 0px 15px;
+    }
+}
