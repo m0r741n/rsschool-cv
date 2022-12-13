@@ -128,6 +128,10 @@ main {
     padding: 0px 70px;
 }
 
+pre {
+    white-space: pre-line;
+}
+
 footer {
     display: flex;
     justify-content: space-around;
