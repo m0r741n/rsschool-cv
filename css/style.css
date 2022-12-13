@@ -68,11 +68,12 @@ nav > ul > li > a:hover::after {
     background-color: white;
 }
 
-li > a > span {
+/* li > a > span {
     text-decoration: line-through;
-}
+} */
 
 a {
+    position: relative;
     text-decoration: none;
     color: var(--main-color);
 }
@@ -126,6 +127,14 @@ main {
     justify-content: center;
     flex-grow: 1;
     padding: 0px 70px;
+}
+
+span[data-title]:hover::after{
+    content: attr(data-title);
+    position: absolute;
+    right: 38px;
+    background-color: rgb(49, 49, 49);
+    text-decoration: line-through;
 }
 
 pre {
