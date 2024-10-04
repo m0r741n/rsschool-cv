@@ -1,8 +1,8 @@
-# Andrei Sudar #
+# Andrei Koala#
 
 ## My contacts: #
-- Phone: +375(33)7720666
-- Email: <klopkillah@gmail.com>
+- Phone: +375(33)7766666
+- Email: <koala@gmail.com>
 - GitHub: [m0r741n](https://github.com/m0r741n)
 - Discord: andrew s (RSschool server)
 
